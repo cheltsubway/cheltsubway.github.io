@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Us</title>
+        <link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/free/png-256/free-subway-logo-icon-svg-download-png-2875384.png">
+        <style>
+            body {
+                padding-top: 2%;
+                padding-left: 5%;
+                padding-right: 5%;
+                padding-bottom: 2%;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #028940;
+                color: black;
+            }
+            div {
+                background-color: white;
+                padding-left: 1%;
+                padding-right: 1%;
+                padding-bottom: 1%;
+            }
+            textarea {
+                width: 80%;
+                height: 100px;
+                resize: none;
+            }
+            table {
+                width: 80%%;
+            }
+            .button {
+                background-color: #028940;
+                color: white;
+                font-weight: bold;
+                font-size: larger;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div name="main">
+            <div name="title" style="border-bottom: solid #028940">
+                <table style="width: 100%;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 30%;">
+                                <h1>Contact Us</h1>
+                            </td>
+                            <td>
+                                <img style="width: 25%; float: right;" src="https://cdn.iconscout.com/icon/free/png-256/free-subway-logo-icon-svg-download-png-2875384.png">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div name="inputField">
+                <form method="POST" action="sendIssue.php">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <label for="fName">First name:</label>
+                                </td>
+                                <td>
+                                    <label for="lName">Last name:</label>
+                                </td>
+                                <td>
+                                    <label for="email">Email:</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="text" name="fName" id="fName" required>
+                                </td>
+                                <td>
+                                    <input type="text" name="lName" id="lName" required>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="email" required>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <label for="issue">Describe your issue:</label>
+                    <br>
+                    <textarea name="issue" id="issue" required></textarea>
+                    <br>
+                    <input class="button" type="submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
