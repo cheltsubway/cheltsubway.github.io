@@ -25,7 +25,7 @@
                 resize: none;
             }
             table {
-                width: 80%%;
+                width: 80%;
             }
             .button {
                 background-color: #028940;
@@ -54,7 +54,7 @@
                 </table>
             </div>
             <div name="inputField">
-                <form method="POST" action="sendIssue.php">
+                <form method="POST" action="https://formspree.io/f/meaaaqjp">
                     <table>
                         <tbody>
                             <tr>
@@ -70,13 +70,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <input type="text" name="fName" id="fName" required>
+                                    <input type="text" name="First Name" id="fName" required>
                                 </td>
                                 <td>
-                                    <input type="text" name="lName" id="lName" required>
+                                    <input type="text" name="Last Name" id="lName" required>
                                 </td>
                                 <td>
-                                    <input type="email" name="email" id="email" required>
+                                    <input type="email" name="From" id="email" required>
                                 </td>
                             </tr>
                         </tbody>
@@ -84,9 +84,9 @@
 
                     <label for="issue">Describe your issue:</label>
                     <br>
-                    <textarea name="issue" id="issue" required></textarea>
+                    <textarea name="body" id="issue" required></textarea>
                     <br>
-                    <input class="button" type="submit">
+                    <input class="button" type="submit" value="Send">
                 </form>
             </div>
         </div>
